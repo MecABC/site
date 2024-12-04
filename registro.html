@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea una Cuenta - MEC ABC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #007bff;
+        }
+        .search-container {
+        position: absolute; /* Posiciona el contenedor absolutamente */
+          top: 30px;          /* Ajusta la distancia desde la parte superior */
+         right: 20px;        /* Ajusta la distancia desde la derecha */
+}
+        .search-container input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          
+           
+        }
+        
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header ul li a{
+            display: inline;
+            margin-right: 20px;
+            color: #000;
+            font-size: 0.8em;
+            text-decoration: none;
+            font-size: 1.3em;
+
+            
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-image: url('fondo.jpg'); /* Establecer la imagen de fondo */
+            background-size: cover; /* Ajustar la imagen al tamaño de la ventana */
+            background-position: center; /* Centrar la imagen */
+        }
+        h1 {
+            font-size: 32px;
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            margin: auto;
+            width: 100%;
+            max-width: 300px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        footer img {
+            height: 30px; /* Altura reducida para las imágenes del footer */
+            margin: 0 10px; /* Espacio entre las imágenes */
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la izquierda */ 
+}
+
+.logo {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 10px;
+  
+    
+}
+
+.site-title {
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente del título del sitio */
+    color: black;     /* Asegura que el color del texto sea negro */
+    
+}
+
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="site-title">MEC ABC</span>
+        </div>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="sobre nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="inicio sesion.html">Iniciar Sesión</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
+    <div class="container">
+        <h1>Crea una Cuenta</h1>
+        <p>¿Ya estás registrado? <a href="inicio sesion.html">Ingresa</a></p>
+        <div class="form-container">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <h2>Nuestras Redes:</h2>
+        <img src="logo-facebook.png" alt="Facebook">
+        <img src="logo-twitter.png" alt="Twitter">
+        <img src="logo-instagram.png" alt="Instagram">
+    </footer>
+</body>
+</html>

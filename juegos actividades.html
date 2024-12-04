@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos y Actividades - MEC ABC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #007bff;
+            position: relative;
+        }
+        header ul {
+            list-style-type: none;
+            padding: 0;
+           
+        }
+        header ul li {
+            display: inline;
+            margin-right: 20px;
+ 
+        }
+        .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la izquierda */
+    
+    
+    
+}
+
+.logo {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 10px;
+  
+    
+}
+
+.site-title {
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente del título del sitio */
+    color: black;     /* Asegura que el color del texto sea negro */
+    
+}
+        header ul li a{
+            display: inline;
+            margin-right: 20px;
+            color: #000;
+            font-size: 1.3em;
+            text-decoration: none;
+
+            
+        }
+        .search-container {
+        position: absolute; /* Posiciona el contenedor absolutamente */
+          top: 30px;          /* Ajusta la distancia desde la parte superior */
+         right: 20px;        /* Ajusta la distancia desde la derecha */
+}
+        .search-container input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          
+           
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            max-width: 1000px;
+            background-image: url('fondo.jpg'); /* Establecer la imagen de fondo */
+            background-size: cover; /* Ajustar la imagen al tamaño de la ventana */
+            background-position: center; /* Centrar la imagen */
+        }
+        .column {
+            flex: 50%;
+            padding: 20px;
+        }
+        .column img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .column img {
+            width: 200%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+            max-width: 320px; /* Establece un tamaño máximo para la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+        h1 {
+            font-size: 32px;
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        footer img {
+            height: 30px; /* Altura reducida para las imágenes del footer */
+            margin: 0 10px; /* Espacio entre las imágenes */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="site-title">MEC ABC</span>
+        </div>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="sobre nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="inicio sesion.html">Iniciar Sesión</a></li>
+            
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
+    <div class="container">
+        <div class="column">
+            <img src="juegos imagen.png" alt="Imagen de Juegos y Actividades">
+        </div>
+        <div class="column">
+            <h1>Juegos y Actividades</h1>
+            <p>En nuestra aplicación encontrarás divertidos juegos y actividades en las que podrás aprender muchas cosas como:</p>
+            <p>
+                - Partes del cuerpo <br>
+                - Abecedario <br>
+                - Números <br>
+                - Animales <br>
+                - Estaciones <br>
+                - Frutas <br>
+                - Lugares <br>
+                - Expresiones de cortesía <br>
+                - Buenos hábitos <br>
+                - Completa la frase <br>
+                - Canciones <br>
+                - Videos interactivos
+            </p>
+        </div>
+    </div>
+    <footer>
+        <h2>Nuestras Redes:</h2>
+        <img src="logo-facebook.png" alt="Facebook">
+        <img src="logo-twitter.png" alt="Twitter">
+        <img src="logo-instagram.png" alt="Instagram">
+    </footer>
+</body>
+</html>
